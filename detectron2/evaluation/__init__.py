@@ -10,4 +10,8 @@ from .sem_seg_evaluation import SemSegEvaluator
 from .testing import print_csv_format, verify_results
 from .table_evaluation.evaluate import calc_table_score
 
+from . import table_evaluation
+from .table_evaluation import annotations
+from .table_evaluation.evaluate import calc_table_score
+
 __all__ = [k for k in globals().keys() if not k.startswith("_")]
